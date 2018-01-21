@@ -8,7 +8,10 @@ engine = create_engine('sqlite:///Chinook.sqlite')
 
 
 def get_df_from_db(cmd):
-    """It gets a command to be executed through the global engine"""
+    """
+    It gets a command to be executed through the global engine
+    :param cmd: a SQL query command.
+    """
     global engine
     with engine.connect() as con:
         rs = con.execute(cmd)
