@@ -16,5 +16,3 @@ print(data, '\n Type: ', type(data))
 print('[INFO]: Printing two columns as a Pandas DataFrame')
 data = df.loc[:, ['area_name', 'tot_emp']]
 print(data, '\n Type: ', type(data))
-
-#
